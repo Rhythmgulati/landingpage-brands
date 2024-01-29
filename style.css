@@ -18,12 +18,13 @@ html,body{
 #main img{
     width: 400px;
     position: absolute;
+    z-index: 99;
 }
 #scroll-bar1{
     overflow-x: auto;
    width: 100%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     white-space: nowrap;    
     display: flex;
     flex-direction: column;
@@ -33,7 +34,7 @@ html,body{
     overflow-x: auto;
    width: 100%;
     position: absolute;
-    top: 40%;
+    top: 38%;
     white-space: nowrap;    
     display: flex;
     flex-direction: column;
@@ -43,7 +44,7 @@ html,body{
     overflow-x: auto;
    width: 100%;
     position: absolute;
-    top: 60%;
+    top: 64%;
     white-space: nowrap;    
     display: flex;
     flex-direction: column;
@@ -51,6 +52,16 @@ html,body{
 }
 h1{
     display: inline;
-    font-size: 200px;
-
+    font-size: 150px;
+    font-family: roboto;
+    letter-spacing: 3px;
+    margin-left: 35px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#scroll-bar2 h1{
+   -webkit-text-stroke: 2px;
+   -webkit-text-stroke-color: black;
+   color: transparent;
 }
