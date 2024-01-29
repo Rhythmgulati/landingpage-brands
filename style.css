@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+#main img{
+    width: 400px;
+    position: absolute;
+}
+#scroll-bar1{
+    overflow-x: auto;
+   width: 100%;
+    position: absolute;
+    top: 20%;
+    white-space: nowrap;    
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+#scroll-bar2{
+    overflow-x: auto;
+   width: 100%;
+    position: absolute;
+    top: 40%;
+    white-space: nowrap;    
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+#scroll-bar3{
+    overflow-x: auto;
+   width: 100%;
+    position: absolute;
+    top: 60%;
+    white-space: nowrap;    
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+h1{
+    display: inline;
+    font-size: 200px;
+
+}
