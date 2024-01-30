@@ -15,8 +15,24 @@ html,body{
    justify-content: center;
    position: relative;
 }
+#text{
+    width: 45%;
+   font-family: roboto;
+    position: absolute;
+    top: 8%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:900;
+    font-size: 17px;
+    letter-spacing: 3px;
+
+
+}
 #main img{
-    width: 400px;
+    width: 450px;
     position: absolute;
     z-index: 99;
 }
@@ -29,16 +45,18 @@ html,body{
     display: flex;
     flex-direction: column;
     display: block;
+  
 }
 #scroll-bar2{
     overflow-x: auto;
    width: 100%;
     position: absolute;
-    top: 38%;
+    top: 39%;
     white-space: nowrap;    
     display: flex;
     flex-direction: column;
     display: block;
+    z-index: 100;
 }
 #scroll-bar3{
     overflow-x: auto;
@@ -51,11 +69,16 @@ html,body{
     display: block;
 }
 h1{
-    display: inline;
+    display: inline-block;
     font-size: 150px;
     font-family: roboto;
     letter-spacing: 3px;
-    margin-left: 35px;
+    margin-right: 35px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
 }
 ::-webkit-scrollbar{
     display: none;
@@ -63,5 +86,24 @@ h1{
 #scroll-bar2 h1{
    -webkit-text-stroke: 2px;
    -webkit-text-stroke-color: black;
+   display: inline-block;
    color: transparent;
+   animation-name: scroll;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear; 
+   animation-direction: reverse;
+}
+#scroll-bar1 h1{
+   
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 35px));
+    }
 }
